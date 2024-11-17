@@ -3,6 +3,7 @@ class TV:
     _precio = 500
     _volumen = 1
     _control = None
+    _numTV = 0
 
     def __init__(self,marca,estado):
         self._marca = marca
