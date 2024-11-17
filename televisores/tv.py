@@ -8,6 +8,7 @@ class TV:
     def __init__(self,marca,estado):
         self._marca = marca
         self._estado = estado
+        self._numTV += 1
     
     def getMarca(self):
         return self._marca
@@ -44,6 +45,10 @@ class TV:
     @classmethod
     def setNumTV(cls,num):
         cls._numTV = num
+
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
 
     def turnOn(self):
         self._estado = True
